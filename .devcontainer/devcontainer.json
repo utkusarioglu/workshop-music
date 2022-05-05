@@ -1,11 +1,14 @@
 {
   "name": "music.workshops.utkusarioglu.com",
-  "dockerComposeFile": ["../.docker/docker-compose.dev.yml", "docker-compose.yml"],
+  "dockerComposeFile": [
+    "../.docker/docker-compose.dev.yml",
+    "docker-compose.yml"
+  ],
   "service": "music",
   "workspaceFolder": "/utkusarioglu/workshops/music",
   "settings": {
     "workbench.colorCustomizations": {
-      "activityBar.background": "#580"
+      "activityBar.background": "#048"
     }
   },
   "extensions": ["ms-toolsai.jupyter", "ms-python.python"],
