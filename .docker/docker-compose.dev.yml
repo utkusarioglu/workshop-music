@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  math:
+  music:
     image: utkusarioglu/music-dev-environment
     working_dir: /utkusarioglu/workshops/music
     volumes:
