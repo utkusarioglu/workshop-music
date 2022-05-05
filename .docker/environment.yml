@@ -2,6 +2,7 @@ name: music
 channels:
   - anaconda
   - conda-forge
+  - cogsci # pygame only
 dependencies:
   - jupyter
   - music21
