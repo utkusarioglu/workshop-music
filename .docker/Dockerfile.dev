@@ -1,0 +1,15 @@
+FROM continuumio/miniconda3
+SHELL ["/bin/bash", "-c"]
+
+RUN apt update 
+RUN apt install vim -y
+
+COPY .docker/environment.yml .
+RUN conda env create --file environment.yml
+
+ARG DOCKER_USERNAME=music
+RUN useradd -m $DOCKER_USERNAME
+USER $DOCKER_USERNAME
+
+COPY .docker/.bashrc /home/${DOCKER_USERNAME}/.bashrc
+ENV PATH "/opt/conda/envs/${DOCKER_USERNAME}/bin:$PATH"

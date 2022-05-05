@@ -1,0 +1,7 @@
+name: music
+channels: 
+  - anaconda
+  - conda-forge
+dependencies:
+  - jupyter
+  - music21
